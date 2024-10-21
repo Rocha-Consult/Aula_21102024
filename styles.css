@@ -1,0 +1,53 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Estilos da div com plano de fundo */
+.custom-background {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+    font-size: 200px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Cor de fundo com opacidade */
+
+    /* Propriedades do plano de fundo */
+    background-image: url('imagem.png');
+    /* Referenciando a imagem que você enviou */
+    background-position: center;
+    /* Centraliza a imagem no fundo */
+    background-repeat: no-repeat;
+    /* Impede a repetição da imagem */
+    background-size: cover;
+    /* Faz a imagem cobrir toda a área da div */
+    background-attachment: fixed;
+    /* A imagem de fundo fica fixa ao rolar a página */
+    background-blend-mode: multiply;
+    /* Mistura a cor de fundo e a imagem */
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 768px) {
+    .custom-background {
+        width: 100%;
+        padding: 30px;
+    }
+}
